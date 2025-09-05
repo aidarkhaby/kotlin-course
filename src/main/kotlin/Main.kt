@@ -13,4 +13,8 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
+        println("Цикл for от 1 до 10:")
+        for (i in 1..10) {
+            print("$i ")
+        }
 }
