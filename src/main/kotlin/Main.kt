@@ -13,8 +13,28 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
-        println("Цикл for от 1 до 10:")
-        for (i in 1..10) {
-            print("$i ")
+    println("Цикл for от 1 до 10:")
+    for (i in 1..10) {
+        print("$i ")
+    }
+    var simpleString = "Я не уверен, это невозможно сделать катастрофа без проблем"
+    fun fun1(arg: String) {
+        val result = when {
+            arg.contains("невозможно") -> arg.replace("невозможно", "совершенно точно возможно, просто требует времени")
+
+            arg.startsWith("Я не уверен") -> arg.plus(", но моя интуиция говорит об обратном")
+
+            arg.contains("катастрофа") -> arg.replace("катастрофа", "интересное событие")
+
+            arg.endsWith("без проблем") -> arg.replace("без проблем", "с парой интересных вызовов на пути")
+
+            !arg.contains(" ") -> "Иногда, $arg, но не всегда"
+
+            else -> arg
         }
+        println(result)
+    }
+    fun1(simpleString)
+
+
 }
