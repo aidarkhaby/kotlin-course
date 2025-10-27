@@ -28,4 +28,16 @@ class Rack(val shelves: MutableList<Shelf>, val maxShelfCount: Int) {
         shelves.removeAt(index)
         return items
     }
+
+    fun addItem(itemName: String): Boolean{
+        if (shelves.isEmpty()) {
+        return false
+        }
+        for (shelf in shelves){
+            if(shelf.canAccommodate(itemName)){
+                return shelf.addItem(itemName)
+            }
+        }
+        return false
+    }
 }
