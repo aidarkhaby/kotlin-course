@@ -1,6 +1,6 @@
 package org.example.lessons.lesson14.homeworks
 
-class Rack(val shelves: MutableList<Shelf>, val maxShelfCount: Int) {
+class Rack(private val shelves: MutableList<Shelf>, val maxShelfCount: Int) {
     private var countShelves = 0
 
     fun containsItem(name: String): Boolean {

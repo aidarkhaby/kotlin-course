@@ -1,6 +1,6 @@
 package org.example.lessons.lesson15.homeworks
 
-class University(
+open class University(
     address: String,
     lessons: List<String>,
     val students: List<String>,

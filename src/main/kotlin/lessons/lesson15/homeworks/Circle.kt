@@ -6,7 +6,7 @@ class Circle(
     square: Double,
     val radius: Int
 ) : GeometricShapes(0, perimeter, square){
-    fun squareCount(val radius: Int): Double {
+    fun squareCount(radius: Int): Double {
         return (3.14 * radius * radius)
     }
 }
