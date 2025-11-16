@@ -1,4 +1,4 @@
-package org.example.lessons.lesson19
+package org.example.lessons.lesson19.homeworks
 
 class OddValidator: Validator<Int> {
     override fun validate(element: Int): Boolean {

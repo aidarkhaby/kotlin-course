@@ -1,4 +1,4 @@
-package org.example.lessons.lesson19
+package org.example.lessons.lesson19.homeworks
 
 interface Mapper<T, L>{
     fun convertElements(arg1: T): L

@@ -1,6 +1,6 @@
-package org.example.lessons.lesson19
+package org.example.lessons.lesson19.homeworks
 
-import org.example.lessons.lesson19.Mapper as Mapper1
+import org.example.lessons.lesson19.homeworks.Mapper as Mapper1
 
 class PhrasesToListOfStrings: Mapper1<String, List<String>> {
     override fun convertElements(arg1: String): List<String> {

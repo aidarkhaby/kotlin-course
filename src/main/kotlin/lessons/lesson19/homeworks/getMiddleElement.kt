@@ -1,4 +1,4 @@
-package org.example.lessons.lesson19
+package org.example.lessons.lesson19.homeworks
 
 fun <T> getMiddleElement(list: List<T>): T? {
     if (list.size % 2 == 0){
