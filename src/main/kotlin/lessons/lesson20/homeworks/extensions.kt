@@ -27,7 +27,7 @@ fun <K> Map<K, List<K>>?.function3(num: Int): Map<String, K?>? {
 
 fun Number.within(other: Number, deviation: Number): Boolean {
     val result = (toDouble() - other.toDouble()).absoluteValue
-    return if(result < deviation){
+    return if(result < deviation.toDouble()){
         true
     } else{
         false
