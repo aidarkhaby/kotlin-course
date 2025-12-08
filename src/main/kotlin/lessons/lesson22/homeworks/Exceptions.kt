@@ -2,6 +2,7 @@ package org.example.lessons.lesson22.homeworks
 
 
 fun main(){
+    /*
     //NullPointerException
     try {
         val arg1: Int? = null
@@ -70,8 +71,9 @@ fun main(){
     ex10(listOf(1, 2, "3"))
 
     throw MyCoolException("Text")
-
+*/
 }
+
 
 fun printPositiveNumber(arg: Int){
     require(arg > 0)
@@ -96,11 +98,13 @@ fun recursiveFunction() {
 
 fun ex10(arg: Any?){
     try{
+        /*
         arg!!
         arg as List<*>
         arg[10]
         require(arg[2] is String)
         check((arg[2] as String).toInt() == 3)
+         */
 
     } catch (e: Throwable){
         val result = when(e){
