@@ -59,11 +59,11 @@ class HomeWork {
         //Преобразовать текстовую коллекцию в коллекцию длин слов
         val listWordsLength = mutableListOf<Int>()
         listOfStrings.forEach{
-            listWordsLength.add(it.length)
+    //        listWordsLength.add(it.length)
         }
 
         //Преобразовать текстовую коллекцию в мапу, где ключи - перевёрнутые слова, а значения - длина слов
-        val mapReversedWords = listOfStrings.associate { it.reversed() to it.length }
+       // val mapReversedWords = listOfStrings.associate { it.reversed() to it.length }
 
         //Отсортировать список в алфавитном порядке
         val listOfStrings2 = listOf("cat", "dog", "bear")
@@ -110,7 +110,7 @@ class HomeWork {
            arg.size < 5 -> "Короткая"
            arg.firstOrNull() == 0 -> "Стартовая"
            arg.sum() > 10000 -> "Массивная"
-           arg.average() == 10 -> "Сбалансированная"
+           //arg.average() == 10 -> "Сбалансированная"
            arg.joinToString().length == 20 -> "Клейкая"
            (arg.maxOrNull() ?: 0) < -10 -> "Отрицательная"
            (arg.minOrNull() ?: 0) > 1000 -> "Положительная"

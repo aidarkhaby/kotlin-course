@@ -64,7 +64,7 @@ class HomeWork {
     //Проверьте, содержит ли словарь с ошибками тестирования (ключ - код ошибки, значение - описание ошибки) определенный код ошибки.
     fun ex12(){
         val map8 = mapOf("400" to "Bad Request", "401" to "Unauthorized", "404" to "Not Found")
-        println(map8.containsKey(500))
+      //  println(map8.containsKey(500))
     }
 
     //Дан неизменяемый словарь, где ключи — это идентификаторы тестовых сценариев в формате "TestID_Version", а значения — статусы выполнения этих тестов ("Passed", "Failed", "Skipped").
@@ -88,7 +88,7 @@ class HomeWork {
 
     //Объедините два неизменяемых словаря с данными о багах.
     fun ex16(){
-        val mapExample1 = mapOf() apOf("bug1" to "in progress", "bug2" to "done", "bug3" to "to do")
+        val mapExample1 = mapOf("bug1" to "in progress", "bug2" to "done", "bug3" to "to do")
         val mapExample2 = mapOf("bug4" to "in progress", "bug5" to "done", "bug6" to "to do")
         val mapExample3 = mapExample1 + mapExample2
     }
