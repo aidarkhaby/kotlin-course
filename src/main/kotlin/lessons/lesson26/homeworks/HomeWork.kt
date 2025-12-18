@@ -2,6 +2,7 @@ package org.example.lessons.lesson26.homeworks
 
 import java.io.File
 
+/*
 fun main() {
 
     val fileEx1 = File("workspace/task1/example.txt")
@@ -77,6 +78,7 @@ fun main() {
         }
     }
 
+
     fun ex7() {
         val phrase = "This is a README file."
         File("workspace/task7/docs/readme.md").apply {
@@ -89,7 +91,8 @@ fun main() {
         }
     }
 
-
     ex6()
     ex7()
 }
+
+ */
