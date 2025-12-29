@@ -7,13 +7,7 @@ class InventoryManager(private val capacity: Int) {
     /**
      * Метод возвращает количество инвентаря. Если наименования нет, возвращает 0
      */
-    fun getItemCount(itemName: String): Int {
-        return if (!items.contains(itemName)) {
-            0
-        } else {
-            items.getValue(itemName)
-        }
-    }
+    fun getItemCount(itemName: String): Int = items[itemName] ?: 0
 
     /**
      * Добавляет инвентарь в хранилище к существующему.
